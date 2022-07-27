@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+
+body{
+	font-family: 'Uchen', serif;
+}
+
+.text-small{
+	font-size: 0.7rem;
+}
+
+.subtitle{
+	letter-spacing: 0.2rem;
+	margin-top: -1rem;
+}
+
+.span-title{
+	letter-spacing: 0.2rem;
+	margin-top: -1rem;
+	margin-bottom: 2.5rem;
+}
+	.span-title span{
+		border-bottom:solid 0.25rem #d1cbb9;
+	}
