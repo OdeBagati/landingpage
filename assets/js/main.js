@@ -26,5 +26,8 @@ $(document).ready(function() {
             }
         ]
     });  
-  });
-Note
+});
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+});
