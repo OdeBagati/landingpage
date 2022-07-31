@@ -21,3 +21,13 @@ body{
 	.span-title span{
 		border-bottom:solid 0.25rem #d1cbb9;
 	}
+
+.text-decoration-none{
+ 	text-decoration: none !important;
+ 	color: #000;
+}
+
+.img-hotel{
+	max-height: 400px;
+	width: 500px;
+}
