@@ -30,7 +30,7 @@
 .b-example-vr {
   flex-shrink: 0;
   width: 1.5rem;
-  height: 100vh;
+  height: 98vh;
 }
 
 .bi {
@@ -68,7 +68,7 @@
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 100vh;
+  height: 95vh;
 }
 
 
