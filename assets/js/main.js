@@ -1,11 +1,11 @@
 $(document).ready(function() {
     $('#lightSlider').lightSlider({
-        item:4,
-        loop:true,
+        item:3,
+        loop:false,
         isTouch:true,
         enableTouch:true,
         enableDrag:true,
-        slideMove:1,
+        slideMove:3,
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
         speed:600,
         responsive : [
@@ -13,7 +13,7 @@ $(document).ready(function() {
                 breakpoint:800,
                 settings: {
                     item:2,
-                    slideMove:1,
+                    slideMove:2,
                     slideMargin:6,
                   }
             },
