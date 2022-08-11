@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
 
 body{
-	font-family: 'Uchen', serif;
+	font-family: 'Loto', sans-serif;
 }
 
 .text-small{
@@ -15,7 +15,6 @@ body{
 
 .span-title{
 	letter-spacing: 0.2rem;
-	margin-top: -1rem;
 	margin-bottom: 2.5rem;
 }
 	.span-title span{
@@ -30,4 +29,9 @@ body{
 .img-hotel{
 	max-height: 400px;
 	width: 500px;
+}
+
+.divider-brand{
+	border-bottom:solid 0.25rem #8B5C02;
+	width: 100%;
 }
