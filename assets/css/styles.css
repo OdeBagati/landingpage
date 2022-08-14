@@ -1,29 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
 
-body{
-	font-family: 'Loto', sans-serif;
+:root{
+	--bg-gradient: linear-gradient(305.27deg, #DAC483 51.13%, #A6892D 109.55%);
+	--brown: #59514F;
+	--gold: #DAC483;
+	--white:  #FFF;
 }
 
-body, html{
-	height: 100%;
+body {
+	font-family: 'Loto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.text-brown{
+	color: var(--brown);
+}
+
+.bg-brown{
+	background-color: var(--brown);
+}
+
+.bg-gold{
+	background-color: var(--gold);
+}
+
+.navbar{
+	display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+	width: 100%;
+    background-color: #f8f9fa;
+    color: var(--gold);
+    z-index: 11;
+}
+
+.brand-title{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links{
+    height: 100%;
+}
+
+.navbar-links ul{
+    display: flex;
+    margin-top: -10px;
+    padding: 0;
+    background: var(--bg-gradient);
+	border-radius:0 0 1.5rem 1.5rem;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover{
+    background-color: #A6882D;
+    border-radius: 1.5rem;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: var(--gold);
+    border-radius: 10px;
 }
 
 .roboto{
 	font-family: Roboto;
 }
 
-/*.bg-grad{
-	background: linear-gradient(116.82deg, #59514F 0%, #8B5C02 100%);
-	height: 100%;
-	position: relative;
-}*/
-
 .text-small{
 	font-size: 0.7rem;
 }
 
-.text-service{
-	color: #DAC483;
+.text-gold{
+	color: var(--gold);
+	transition: transform .2s;
+}
+
+.text-gold:hover{
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 
 .service{
@@ -32,14 +113,25 @@ body, html{
 }
 
 .btn-about{
-	background-color: #DAC483;
+	background-color: var(--gold);
 	color: #8B5C02;
+	margin-right: 5rem;
+}
+
+.btn-about:hover{
+	border-color: var(--gold);
+	color: var(--gold);
 }
 
 .btn-contact{
-	background-color: #DAC483, opacity: 0;
-	border-color: #DAC483;
-	color: #DAC483;
+	border-color: var(--gold);
+	color: var(--gold);
+}
+
+.btn-contact:hover{
+	background-color: var(--gold);
+	border-color: var(--gold);
+	color: #8B5C02;
 }
 
 .brown{
@@ -56,7 +148,7 @@ body, html{
 	margin-bottom: 2rem;
 }
 	.span-title span{
-		border-bottom:solid 0.25rem #59514F;
+		border-bottom:solid 0.25rem var(--brown);
 	}
 
 .text-decoration-none{
@@ -84,7 +176,7 @@ body, html{
 
 .bg-about{
 	box-sizing: border-box;
-	background: linear-gradient(305.27deg, #DAC483 51.13%, #A6892D 109.55%);
+	background: var(--bg-gradient);
 	border: 1px 1px 0 1px solid #000;
 	border-radius: 0 75px 0 75px;
 }
@@ -110,6 +202,61 @@ body, html{
 	margin-bottom: 0;
 }
 
+@media (max-width: 800px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+		position: fixed;
+		width: 100%;
+		z-index: 11;
+    }
+
+    .toggle-button{
+        display: flex;
+        margin: 10px 20px 10px 10px;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+        background: #f8f9fa;
+        margin-top: 1rem;
+        border-radius:0;
+    }
+
+    .navbar-links ul li{
+        text-align: center;
+    }
+
+    .navbar-links li:hover{
+    	background-color: #f8f9fa;
+	}
+
+    .navbar-links ul li a{
+        padding: .5rem 1rem;
+        color: var(--brown);
+    }
+
+    .navbar-links ul li a:hover{
+        background-color: var(--gold);
+        color: white;
+        border-radius: 15px;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    .btn-about{
+		margin-right: 2rem;
+	}
+}
+
 @media (max-width:600px){
 	.margin-about-right{
 		margin: 2.5rem;
@@ -121,5 +268,9 @@ body, html{
 
 	.margin-leader{
 		margin-bottom: 2rem;
+	}
+
+	.btn-about{
+		margin-right: 1rem;
 	}
 }
