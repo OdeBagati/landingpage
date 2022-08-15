@@ -57,18 +57,19 @@
 }
 
 /* Carousel base class */
-.carousel {
-  margin-bottom: 3rem;
+.carousel-cover{
+  /*margin-top: 3rem;*/
+  margin-bottom: 0rem;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 95vh;
+  height: 100vh;
 }
 
 
@@ -113,21 +114,11 @@
     font-size: 1rem;
     line-height: 1.4;
   }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
 }
 
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
-
-@media (min-width: 1em) {
-
-  .featurette-heading {
-    margin-top: 7rem;
+@media (max-width: 380px){
+  .carousel-caption {
+    margin-bottom: -1rem;
+    z-index: 10;
   }
 }

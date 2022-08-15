@@ -149,6 +149,7 @@ body {
 	background-color: var(--gold);
 	color: #8B5C02;
 	margin-right: 5rem;
+	margin-top: 4rem;
 }
 
 .btn-about:hover{
@@ -159,6 +160,7 @@ body {
 .btn-contact{
 	border-color: var(--gold);
 	color: var(--gold);
+	margin-top: 4rem;
 }
 
 .btn-contact:hover{
@@ -215,7 +217,7 @@ body {
 }
 
 .margin-about{
-	margin: 2.5rem 2.5rem 2.5rem 2.5rem;
+	margin: 2.5rem 2.5rem 2.5rem 5rem;
 }
 
 .margin-about-right{
@@ -345,6 +347,18 @@ body {
 	}
 
 	.btn-about{
-		margin-right: 1rem;
+		margin-top: 20px;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.btn-contact{
+		margin-top: 10px;
+		margin-right: 0;
+		margin-bottom: 0px;
+	}
+
+	.margin-about{
+		margin: 2.5rem 2.5rem 2.5rem 2.5rem;
 	}
 }
