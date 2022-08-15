@@ -31,3 +31,27 @@ $(document).ready(function() {
 $(document).ready(function(){
     $('.sidenav').sidenav();
 });
+
+var topbutton = {"top":document.getElementById("btn-top"),"contact":document.getElementById("btn-contact-fixed")}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 20) {
+        topbutton.top.style.display = "block";
+        topbutton.contact.style.display = "block";
+    } else {
+        topbutton.top.style.display = "none";
+        topbutton.contact.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+function clickMenu(x) {
+    // console.log(x);
+    x.classList.toggle("change");
+}

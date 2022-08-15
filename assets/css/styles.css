@@ -13,6 +13,10 @@ body {
 	padding: 0;
 }
 
+.bg-gradient{
+	background: var(--bg-gradient);
+}
+
 .text-brown{
 	color: var(--brown);
 }
@@ -80,13 +84,42 @@ body {
     width: 30px;
     height: 21px;
 }
+	.toggle-button .bar1{
+	    height: 3px;
+	    width: 100%;
+	    background-color: var(--gold);
+	    border-radius: 10px;
+	    transition: transform .2s;
+	}
 
-.toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: var(--gold);
-    border-radius: 10px;
-}
+	.toggle-button .bar2{
+	    height: 3px;
+	    width: 100%;
+	    background-color: var(--gold);
+	    border-radius: 10px;	
+	}
+
+	.toggle-button .bar3{
+	    height: 3px;
+	    width: 100%;
+	    background-color: var(--gold);
+	    border-radius: 10px;
+	    transition: transform .2s;
+	}
+
+	.change .bar1{
+		-webkit-transform: rotate(-45deg) translate(-9px, 9px);
+	 	transform: rotate(-45deg) translate(-8px, 6px);
+	}
+
+	.change .bar2{
+		opacity: 0;
+	}
+
+	.change .bar3{
+		-webkit-transform: rotate(45deg) translate(-9px, -9px);
+		transform: rotate(45deg) translate(-6px, -5px);
+	}
 
 .roboto{
 	font-family: Roboto;
@@ -202,7 +235,48 @@ body {
 	margin-bottom: 0;
 }
 
-@media (max-width: 800px){
+.btn-contact-bottom{
+	background-color: var(--brown);
+	border-radius: 50%;
+	color: #fff;
+	margin-right: 0.5rem;
+ 	margin-left: 0.5rem;
+}
+
+#btn-contact-fixed{
+	background-color: var(--brown);
+	border-radius: 50%;
+	color: #fff;
+	margin-right: 0.5rem;
+ 	margin-left: 0.5rem;
+	position: fixed;
+	bottom: 80px;
+	right: 20px;
+}
+
+#btn-top{
+	display: none;
+	background-color: var(--brown);
+	border-radius: 50%;
+	color: #fff;
+	margin-right: 0.5rem;
+ 	margin-left: 0.5rem;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+#btn-contact-fixed:hover{
+	background: var(--bg-gradient);
+	color: var(--white);
+}
+
+#btn-top:hover{
+	background: var(--bg-gradient);
+	color: var(--white);
+}
+
+@media (max-width: 1200px){
     .navbar {
         flex-direction: column;
         align-items: flex-start;
